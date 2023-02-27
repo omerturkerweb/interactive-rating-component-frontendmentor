@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  /* Colors */
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: #1f2630;
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --light-blue-bg: rgba(37, 47, 54, 255);
+
+  /* Typography */
+  --font-size: 15px;
+  /* Fonts */
+  --font-overpass: "Overpass", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-overpass);
+  color: var(--white);
+  background-color: var(--very-dark-blue);
+}
+#root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .card-main {
+    width: 95%;
+  }
+  .submitted-text {
+    padding: 0 30px;
+  }
+}
